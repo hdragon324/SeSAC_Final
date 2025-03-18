@@ -65,7 +65,7 @@ def main():
                 "business_field": st.session_state["business_field"],
                 "region": st.session_state["region"],
                 "business_name": business_name,
-            }
+            } 
             st.session_state["submissions"].append(submission_data)
 
             # ✅ CSV에 저장
