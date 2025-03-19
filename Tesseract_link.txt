@@ -1,0 +1,16 @@
+--------------------------------------------------------------------------------------------
+Tesseract
+https://github.com/UB-Mannheim/tesseract/wiki
+
+## tesseract 경로
+C:\Users\tjdrb\AppData\Local\Programs\Tesseract-OCR
+
+### tesseract 사용 방법
+https://coding-yesung.tistory.com/239
+
+### kor.train 다운(한글이 안될 시 다운)
+https://github.com/tesseract-ocr/tessdata/
+
+
+### poppler 다운로드 및 실행
+https://wooiljeong.github.io/python/pdf-to-image/
