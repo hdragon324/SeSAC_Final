@@ -188,9 +188,20 @@ def main():
         if "금융" in data and data["금융"]:
             # 첫 10개 항목만 가져오기
             test_data = data['금융'][:10]
+            st.write(test_data[2]['summary']) # test_data[0]~[9] 까지의 data만 존재
 
-            # 3번째 항목의 summary 출력
+            for i, item in enumerate(test_data):
+                st.write(f"공고명 {i+1}: {item.get('지원사업 공고명', '데이터 없음')}")
+                st.write(f"소관부처·지자체 {i+1}: {item.get('소관부처·지자체', '데이터 없음')}")
+                st.write(f"사업수행기관 {i+1}: {item.get('사업수행기관', '데이터 없음')}")
+                st.write(f"신청기간 {i+1}: {item.get('신청기간', '데이터 없음')}")
+                st.write(f"공고파일명 {i+1}: {item.get('공고파일명', '데이터 없음')}")
+                st.write("\n")
+
+            # summary 출력 (test_data[2]에 해당하는 항목)
             if len(test_data) > 2:
-                st.write("3번째 항목의 Summary:", test_data[2].get("summary", "데이터 없음"))
+                st.write("Summary for 3rd item:", test_data[2].get("summary", "데이터 없음"))
         else:
             st.write("금융 관련 데이터가 없습니다.")
+
+
