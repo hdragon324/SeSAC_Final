@@ -1,4 +1,5 @@
 import openai
+import time
 
 def generate_business_plan(prompt):
     """
@@ -16,4 +17,12 @@ def generate_business_plan(prompt):
 
     # 응답 결과 정리
     result = response.choices[0].message.content.replace("### ", "")
-    return result
+
+    # 각 문항 작성 후 대기
+    sentences = result.split('\n')  # 문장 단위로 분리
+    processed_result = ""
+    for sentence in sentences:
+        processed_result += sentence + '\n'
+        time.sleep(2) 
+
+    return processed_result
