@@ -17,10 +17,10 @@ item_info = get_user_input()
 # 사업계획서 생성 버튼 추가
 if st.button("📄 사업계획서 작성하기"):
     sections = [
-        "제품 및 서비스 개발동기 및 필요성",
-        "개발 방안",
-        "시장진입 및 자금조달",
-        "팀 구성 및 사회적 가치"
+        "1. 문제 인식",
+        "2. 실현 가능성",
+        "3. 성장 전략",
+        "4. 팀 구성"
     ]
 
     business_plans = {}
@@ -41,7 +41,6 @@ if st.button("📄 사업계획서 작성하기"):
     # 생성된 결과 자동 저장
     json_filename = save_to_file(item_info['아이템 명'], business_plans)
 
-    st.info(f"📂 사업계획서가 '{json_filename}' 파일로 자동 저장되었습니다.")
 
     # 결과를 Streamlit 화면에 출력
     st.subheader("📌 생성된 사업계획서")
