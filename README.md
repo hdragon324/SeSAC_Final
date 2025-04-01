@@ -1,6 +1,7 @@
 # AI-for-Creating-Business-Plan-Drafts
 
 ## 초기세팅
+'''
 0. module_install.ipynb를  먼저 실행하세요
 
 1.
@@ -26,9 +27,11 @@ utils/get_text.py def get_image_text(path)
 
 4. 
 auto.py의 파일 경로를 입력하세요
+'''
 
 ## 파일 구조
 
+'''
 AI-FOR-CREATING-BUSINESS-PLAN/
 │── business_plan/                        # 사업계획서 초안 작성 서비스
 │   │── output.ipynb                      # papermill의 결과가 출력되는 jupyter notebook 파일
@@ -82,3 +85,4 @@ AI-FOR-CREATING-BUSINESS-PLAN/
 │── README.md                               # 초기세팅 및 파일 구조 설명
 │── update_crawl_output.json                # 크롤링 결과가 출력되는 파일
 │── update_crawl.ipynb                      # 공고 업데이트 크롤링 (papermill로 실행)
+'''
