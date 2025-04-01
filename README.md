@@ -34,11 +34,17 @@ auto.py의 파일 경로를 입력하세요
 '''plaintext
 AI-FOR-CREATING-BUSINESS-PLAN/
 │── business_plan/                        # 사업계획서 초안 작성 서비스
+
 │   │── output.ipynb                      # papermill의 결과가 출력되는 jupyter notebook 파일
+
 │   │── 예비창업패키지_사업계획서.json      # 작성된 사업계획서를 json 파일로 저장
+
 │   │── 예비창업패키지_초안.docx            # 작성된 사업계획서를 docx 파일로 저장
+
 │   │── 예비창업패키지_초안.pdf             # docx 파일을 pdf 파일로 변환하여 저장
+
 │   │── 예비창업패키지.ipynb                # papermill을 사용하여 실행할 jupyter notebook 파일
+
 │   │── 청년창업사관학교_사업계획서.pdf
 │   │── 청년창업사관학교_초안.docx
 │   │── 청년창업사관학교_초안.json
