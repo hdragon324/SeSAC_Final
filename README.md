@@ -1,7 +1,7 @@
 # AI-for-Creating-Business-Plan-Drafts
 
 ## 초기세팅
-'''
+'''plaintext
 0. module_install.ipynb를  먼저 실행하세요
 
 1.
@@ -31,7 +31,7 @@ auto.py의 파일 경로를 입력하세요
 
 ## 파일 구조
 
-'''
+'''plaintext
 AI-FOR-CREATING-BUSINESS-PLAN/
 │── business_plan/                        # 사업계획서 초안 작성 서비스
 │   │── output.ipynb                      # papermill의 결과가 출력되는 jupyter notebook 파일
